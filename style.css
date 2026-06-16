@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+label,
+input {
+    display: block;
+    width: 100%;
+}
+button{
+    background-color: #fff;
+    color: #AAAF97;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 100%;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+nav {
+    background-color: #AAAF97;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: 125px;
+
+}
+
+.navbar>div li {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.navbar li svg {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar li a {
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.navbar section {
+    display: flex;
+    gap: 10px;
+}
+
+.header {
+    background-image: url(images/Rectangle\ 26.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header>section {
+    padding: 200px 0;
+}
+
+.header h1 {
+
+    text-transform: capitalize;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.header p {
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+}
+
+.header .btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn a:first-child {
+    background-color: rgb(255, 255, 255);
+    color: rgba(170, 175, 151, 1);
+    padding: 15px 30px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+
+.btn a:nth-child(2) {
+    border: 2px solid white;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 25px;
+    margin-left: 5px;
+    border-radius: 50px;
+  
+    
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.category img {
+    width: 150px;
+}
+
+.category p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.collection .card {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+.collection .card h3 {
+    position: absolute;
+    bottom: -100%;
+    text-transform: capitalize;
+    padding: 0 0 20px 20px;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+.collection .card:hover h3 {
+    bottom: 0;
+    font-size: 24px;
+}
+
+.bestselling {
+    position: relative;
+}
+
+.bestselling h3 {
+    padding: 80px 0 40px 0;
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bestselling>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.bestselling img {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.bestselling>div a:first-child {
+    position: relative;
+}
+
+.bestselling p {
+    position: absolute;
+    bottom: 180px;
+    left: -25px;
+    background-color: #AAAF97;
+    display: inline;
+    padding: 25px 35px;
+    border-radius: 50px;
+}
+
+.inspire {
+    margin-top: 80px;
+    text-align: center;
+    background-image: url(images/hireyourspace.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+}
+
+.inspire h2 {
+    text-transform: capitalize;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.inspire .container p {
+    margin: 0 auto;
+    min-width: 150px;
+    color: #fff;
+}
+
+.inspire .btn {
+   
+    margin-top: 30px;
+}
+
+.latest h2 {
+    padding: 80px 0 40px 0;
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.latest>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.latest img {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.contactus {
+    margin: 80px 0;
+    text-align: center;
+    background-image: url(images/contactus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.contactus h2 {
+    text-transform: capitalize;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contactus .btn {
+    background-color: #fefefe;
+    color: #AAAF97;
+    padding: 8px 40px;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #AAAF97;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.footer>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer .left {
+    flex-basis: 150px;
+}
+
+
+.footer img {
+    width: 125px;
+    padding-bottom: 20px;
+
+}
+
+.footer .left p {
+    width: 450px;
+    padding-bottom: 10px;
+}
+
+.footer h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.footer .list1 p {
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.footer .list2 p {
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.ideascard1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 250px;
+    margin: 40px auto;
+}
+
+.ideascard1>div {
+    background-color: #AAAF97;
+    color: #fff;
+    flex-basis: 250px;
+    flex-grow: 1;
+    text-align: right;
+    
+
+}
+
+.ideascard1>div:nth-child(1) {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ideascard1>div h2 {
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.ideascard2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 250px;
+    margin: 40px auto;
+}
+
+.ideascard2>div {
+    background-color: #AAAF97;
+    color: #fff;
+    flex-basis: 250px;
+    flex-grow: 1;
+    text-align: left;
+
+}
+.ideascard2 a{
+   
+   color: #AAAF97;
+   background-color: #fff;
+   padding: 10px 20px;
+   border-radius: 25px;
+   font-weight: 600;
+   text-align: center;
+   margin-top: 20px;
+   
+}
+
+.ideascard2>div:nth-child(2) {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ideascard2 div h2 {
+    padding: 20px 0;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.aboutheader {
+    background-image: url(images/aboutus1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+
+}
+
+.aboutheader h2 {
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.aboutheader p {
+    text-transform: capitalize;
+}
+
+.wwa {
+    text-align: center;
+
+}
+
+.wwa h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.wwa p {
+    max-width: 700px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.skills p {
+    margin: 20px 0;
+}
+
+.line {
+    margin-bottom: 40px;
+}
+
+.line p {
+    margin: 5px 0;
+}
+
+.line>div {
+    background-color: rgba(170, 175, 151, 0.5);
+    width: 250px;
+    height: 5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.line>div::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: #AAAF97;
+    width: 75%;
+}
+
+.line-2>div::after {
+    width: 60%;
+}
+
+.line-3>div::after {
+    width: 90%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 800px;
+    gap: 40px;
+
+}
+
+.skills>div {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.skills>div h2 {
+    margin-top: 40px;
+}
+
+.yrs {
+    display: flex;
+    text-align: center;
+}
+
+.yrs p {
+    margin: 0;
+
+}
+
+.aboutbox div {
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 120px auto;
+}
+.contact-info>div {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+.contact-info form input {
+    border: none;
+    color: #938D8D;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 8px 0 24px;
+
+}
+.contact-info button{
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    background-color: #AAAF97;
+    color: #fff;
+    border-radius: 50px;
+}
+.contact-info form input:focus {
+    outline: none;
+}
+.git{
+    text-align: center;
+}
+.git>div h2{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+.git h5{
+    color: #AAAF97;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.git>div>p {
+    margin: 8px 0 40px;
+}
+.git .box {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.custom{
+    background-color: #AAAF97;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 40px;
+    
+}
+.custom h2{
+    font-size: 54px;
+    text-transform: capitalize;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.2;
+   
+}
+.custom p{
+    max-width: 500px;
+    margin: 0 auto;
+     padding: 15px 0;
+    
+}
+.cbanner{
+    background-image: url(images/c1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+    
+    
+}
+.cbanner h2{
+    padding: 200px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.n h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+
+    
+}
+.text{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ccard p{
+    max-width: 300px;
+    font-size: 12px;
+    color: #AAAF97;
+}
+
+.text h5{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.text h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 42px;
+}
+.ccard{
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+.ccard .b1{
+background-color: #AAAF97;
+color: #fff;
+border-radius: 25px;
+padding: 5px 35px;
+width: 100%;
+display: block;
+}
+.b{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.ccard .b2{
+color: #AAAF97;
+border:2px solid #AAAF97;
+padding: 5px 35px;
+width: 100%;
+display: block;
+}
+.cbox1{
+    margin: 60px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cart h2{
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 70px 0 30px 0;
+}
+.cartbox1{
+    display: flex;
+    margin-top: 40px;
+    
+}
+.cartbox1>div img{
+    flex-basis: 250px;
+}
+.carttext{
+    margin-left: 30px;
+}
+.carttext>div{
+    display: flex;
+    gap: 5px;
+    margin-top: 80px;
+}
+.carttext svg{
+    margin-top: 5px;
+    border: 1px solid  #AAAF97;
+    padding: 10px;
+}
+.carttext>div p{
+    padding: 2px 10px;
+    background-color: #AAAF97;
+}
+.carttext p{
+    font-weight: 500;
+}
+.carttext h2{
+    font-weight: 600;
+    padding-top: 10px;
+}
+.cartcard h2{
+    padding-bottom: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.y{
+    padding: 30px;
+    height: fit-content;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 25px;
+    margin-top: 40px;
+   
+   
+}
+hr{
+    border-top: 2px solid #000;
+   
+}
+.t p{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.t{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.t .free{
+    color: #AAAF97;
+}
+.j{
+    margin-top: 30px;
+    display: flex;
+   gap: 150px;
+}
+
+.tt p{
+    font-weight: 600;
+}
+.nd p{
+    font-weight: 600;
+}
+.cartt button{
+    padding: 10px 80px;
+    background-color: #AAAF97;
+    color: #fff;
+    margin-top: 30px;
+   
+}
+.k{
+    text-align: center;
+}
+.cartt{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        display: none;
+    }
+
+    .category {
+        padding: 30px 0;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        max-width: 400px;
+    }
+
+    .contactus h2 {
+        font-size: 30px;
+    }
+    .contactus a{
+        font-size: 10px;
+    }
+
+    .inspire h2 {
+        font-size: 30px;
+    }
+
+    .inspire .container p {
+        font-size: 10px;
+
+    }
+
+    .footer .left p {
+        width: 200px;
+
+    }
+
+    .contactus {
+        padding: 100px 0;
+    }
+
+    .ideascard2>div:nth-child(2) {
+        padding: 40px;
+    }
+
+    .ideascard1 h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .ideascard1 p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .ideascard2 h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .ideascard2 p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .ideascard2 a{
+        font-size: 10px;
+    }
+
+    .aboutheader h2 {
+        font-size: 20px;
+
+    }
+
+    .aboutheader p {
+        font-size: 12px;
+    }
+
+    .wwa h2 {
+        font-size: 25px;
+    }
+
+    .wwa p {
+        font-size: 15px;
+    }
+
+    .skills {
+        gap: 0;
+        padding: 0 20px;
+        
+    }
+
+    .skills h2 {
+        font-size: 20px;
+    }
+
+    .skills p {
+        font-size: 12px;
+    }
+    .custom{
+        padding: 20px 20px;
+    }
+    .custom h2{
+        font-size: 24px;
+    }
+    .custom p{
+        max-width:300px ;
+        font-size: 12px;
+    }
+    .ccard .b1,.b2{
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .cbanner{
+        margin-bottom: 20px;
+    }
+    .cbanner h2{
+        font-size: 25px;
+    }
+    .n h2{
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-size:25px ;
+    }
+    .cbox1{
+    margin: 20px auto;
+    }
+    .carttext p,h2{
+        font-size: 15px;
+    }
+    .carttext>div{
+        margin-top: 30px;
+        
+    }
+    .carttext>div p{
+        font-size:12px ;
+       
+        
+    }
+    .header{
+        padding: 0 20px;
+    }
+    .navbar img {
+    width: 100px;
+
+}
+.navbar li svg {
+    width: 20px;
+    height: 20px;
+}
+
+}
